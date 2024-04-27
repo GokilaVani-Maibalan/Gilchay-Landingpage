@@ -1,0 +1,223 @@
+*{
+    font-family: "Reem kufi";
+}
+
+img {
+    /* max-width: 100%; */
+    height: auto;
+  }
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(252, 250, 242);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.App {
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 0rem auto;
+    margin: 0rem ;
+
+  }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .navbar-menu-container {
+    display: none;
+  }
+  .nav-container a {
+    justify-content: space-around;
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .nav-container img{
+    margin-top: 10px;
+  }
+
+  .nav-searchbar{
+    display: flex;
+   justify-content: space-between;
+  }
+
+  .primary-button {
+    margin-left: 2rem ;
+    padding: 0.9rem 1rem;
+    background-color: rgb(238, 179, 17);
+    border: none;
+    border-radius: 5rem;
+    font-size: .8rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    color: white;
+  }
+
+  .primary-button:hover {
+    background-color: rgb(219, 157, 13);
+  }
+
+  input{
+    border-radius: 5rem;
+    border: none;
+  }
+
+  .home-banner{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    position: relative;
+  padding-top: 3rem;
+  justify-content: space-between;
+}
+
+  .home-bannerImage{
+    position: absolute;
+    top:-5px;
+    right: 0px;
+    z-index: -2;
+    max-width: 700px;
+  }
+
+  .home-bannerImage img{
+    max-width: 700px;
+    flex: 1;
+  }
+   
+  h1{
+    font-size: 50px;
+    color:rgb(238, 179, 17) ;
+    max-width: 600px;
+}
+  .primary-text{
+    font-size: xx-large;
+    font-weight:lighter;
+    color:rgb(238, 179, 17) ;
+    margin: 1.5rem 0rem;
+    max-width: 500px;
+  }
+
+  .home-text{
+margin-left: 10px;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+max-width: 500px;
+  }
+  
+  .contact-icons{
+    height:200px;
+    width: 10px;
+    padding: 20px 30px 20px 20px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    align-content: center;
+    background-color: rgb(21, 177, 21);
+   margin-top: 100px;
+  }
+.divider, .divider-2{
+    background-color:rgb(21, 177, 21); 
+    width:3px;
+    height:100px;
+
+}
+
+
+  .left-panel{
+    display: flex;
+    justify-content: space-between;
+  }
+.round{
+    background-color: rgb(21, 177, 21);
+    margin-top:100px;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    margin-left: -3px;
+}
+
+.round-2{
+    background-color: rgb(21, 177, 21);
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    margin-left: -3px;
+}
+
+.nav-logo{
+    align-content: center;
+}
+
+
+@media (max-width: 1000px) {
+    .nav-container a {
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    .primary-button {
+      font-size: 1rem;
+    }
+    .home-bannerImage {
+      max-width: 600px;
+    }
+  }
+/* 
+  @media (max-width: 600px) {
+    .home-bannerImage
+     {
+      display: none;
+    }
+  } */
+
+  @media (max-width: 800px) {
+    
+    .nav-container, .nav-searchbar, .divider, .round, .round-2 {
+      display: none;
+    }
+    .navbar-menu-container {
+      display: flex;
+    }
+    .home-banner
+    {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    .home-bannerImage
+   {
+    width: 100%;
+    max-width: 400px;
+  }
+  .App {
+    max-width: 95vw;
+  }
+  .heading {
+    text-align: center;
+    max-width: 90%;
+  }
+  .primary-text {
+    text-align: center;
+    max-width: 80%;
+  }
+  .home-text{
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}
